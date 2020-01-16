@@ -16,19 +16,19 @@ export class TodoService {
 
  
     getTodos(): Observable<Todo[]>{
-      return this.http.get<Todo[]>(`${this.URI}/todos`);
+      return this.http.get<Todo[]>(`${this.URI}/todo`);
     }
 
     save(todo: Todo){
-      return this.http.post<Todo>(`${this.URI}/todos`, todo);
+      return this.http.post<Todo>(`${this.URI}/todo`, todo);
     }
 
     update(todo: Todo){
-      return this.http.put<Todo>(`${this.URI}/todos/${todo.title}`, todo);
+      return this.http.put<Todo>(`${this.URI}/todo/${todo.title}`, todo);
     }
 
     delete(title: number){
-      return this.http.delete<Todo>(`${this.URI}/todos/${title}`);
+      return this.http.delete<Todo>(`${this.URI}/todo/${title}`);
     }
 
     setter(todo: Todo){

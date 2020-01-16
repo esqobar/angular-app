@@ -44,7 +44,7 @@ export class ListComponent implements OnInit {
      }
   
     gotoBookList() {
-      this.router.navigate(['/todos']);
+      this.router.navigate(['list']);
     }
 
 }
