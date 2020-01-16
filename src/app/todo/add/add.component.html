@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card my-5">
+            <div class="card-body">
+              <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+                <div class="form-group">
+                  <label for="name">Title</label>
+                  <input type="text" [(ngModel)]="todo.title" 
+                    class="form-control"
+                    id="title"
+                    name="title"
+                    placeholder="Enter the title"
+                    required #title="ngModel">
+                </div>
+                <button type="submit"
+                  class="btn btn-info">Submit</button>
+              </form>
+            </div>
+          </div>
+</div>

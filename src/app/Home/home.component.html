@@ -1,0 +1,9 @@
+<h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in To Task App!!</p>
+
+<h1 class="text-center"><ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}}) <span>Welcome</span>
+    </li>
+</ul> 
+</h1>
